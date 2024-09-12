@@ -115,6 +115,7 @@ img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 9px;
 }
 
 .hero-btn:hover {
@@ -129,7 +130,7 @@ nav .fa {
 
 @media(max-width:700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .nav-links ul li {
@@ -428,7 +429,8 @@ h3 {
     color: #fff;
 }
 .sub-haeder h1{
-    margin-top: 100px;
+    padding:100px 0;
+    margin-top: 59px;
 }
 
 .about-us{
@@ -573,7 +575,7 @@ h3 {
 @media(max-width:700px)
 {
     .sub-haeder h1{
-        font-size: 24px;
+        font-size: 50px;
     }
 }
 
