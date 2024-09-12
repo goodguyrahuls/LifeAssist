@@ -15,11 +15,19 @@
 }
 
 nav {
+    margin: 0px 0px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 2px ;
+    padding: 0 0;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 1000;
+    background-color: #1CD993;
 }
 
 img {
@@ -29,6 +37,9 @@ img {
 .nav-links {
     flex: 1;
     text-align: right;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 
 .nav-links ul li {
@@ -56,6 +67,21 @@ img {
 
 .nav-links ul li :hover::after {
     width: 100%;
+}
+.logimbtn{
+    margin: 8px 12px;
+    padding: 8px 28px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ---------------------------HOME PAGE  */
@@ -395,7 +421,7 @@ h3 {
 .sub-haeder{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.jpeg);
+    background-image: linear-gradient(rgba(4, 30, 18, 0.7),rgba(4,9,30,0.7)),url(background.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
