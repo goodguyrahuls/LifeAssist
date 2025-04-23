@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeAssist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-haeder">
+        <nav><a href="index.html"><img src="logo2.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="http://localhost:8080/">HOME</a></li>
+                    <li><a href="http://localhost:8080/about">ABOUT</a></li>
+                    <li><a href="http://localhost:8080/ambulance">AMBULANCES</a></li>
+                    <li><a href="http://localhost:8080/service">SERVICE</a></li>
+                    <li><a href="http://localhost:8080/about">HOSPITALS</a></li>
+                    <li><a href="http://localhost:8080/about">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-----------------about us content----------------------------------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Overview of Ambulance Services</h1>
+                <p>An ambulance service provides emergency medical assistance and patient transportation. It ensures timely response during medical crises, equipped with life-saving equipment and trained paramedics. The service includes rapid patient transport to hospitals, monitoring vitals, and providing immediate care, often critical for saving lives. Modern ambulance services often integrate GPS tracking, real-time communication, and medical data sharing with hospitals to improve efficiency and patient outcomes.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpeg" alt="img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-----------------Footer----------------------------------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The ambulance service offers rapid, efficient emergency response with smart technology for real-time vehicle
+            and patient monitoring. <br> It ensures timely arrivals and excellent care, leveraging advanced IoT and AI
+            systems.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> By GoodguyRahuls </p>
+    </section>
+
+
+    <!-----------------------JavaScript for Toggle Menu-------------------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
